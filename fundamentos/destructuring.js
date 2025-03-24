@@ -48,3 +48,14 @@ const obj = {max: 50, min: 40}
 console.log(rand(obj)) //considera os parametros de obj
 console.log(rand({min: 955})) // considera o maximo definido na função
 console.log(rand({})) //considera os paramentros de min e max definidos na função
+
+console.log('*****************************')
+function rand1([min = 0, max = 1000]){
+    if (min > max) [min, max] = [max, min] //cria um novo array com a desestruturação do array definido na função
+    const valor1 = Math.random() * (max - min) + min
+    return Math.floor(valor1)
+}
+console.log(rand1([50, 40]))
+console.log(rand1([992]))
+console.log(rand1([, 10]))
+console.log(rand([]))
