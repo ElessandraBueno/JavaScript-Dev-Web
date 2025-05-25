@@ -3,7 +3,7 @@
 
 //Criando de forma literal
 function fun1(){
-
+//se uma função não retornar nada, sempre será undefined
 }
 
 //Armazenar em uma variável

@@ -1,5 +1,6 @@
 function soma(){
     let soma_var = 0
+    //Arguments é um objeto semelhante a um array interno da função que tem todos os elementos que foram passados
     for(i in arguments){
         soma_var += arguments[i]
     }
