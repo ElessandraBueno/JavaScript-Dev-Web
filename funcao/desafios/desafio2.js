@@ -4,4 +4,15 @@
 // ao tamanho de seus lados. (Neste exemplo deve-se abstrair as condições matemáticas de existência de um
 // triângulo).
 
-
+function triangulo(ladoA, ladoB, ladoC){
+    if(ladoA == ladoB && ladoA == ladoC){
+        return `Triângulo equilátero: \nLado A: ${ladoA} \nLado B: ${ladoB} \nLado C: ${ladoC}`
+    } else if (ladoA == ladoB || ladoB == ladoC || ladoA == ladoC){
+        return `Triângulo isósceles: \nLado A: ${ladoA} \nLado B: ${ladoB} \nLado C: ${ladoC}`
+    } else{
+        return `Triângulo escaleno: \nLado A: ${ladoA} \nLado B: ${ladoB} \nLado C: ${ladoC}`
+    }
+}
+console.log(triangulo(2,5,6))
+console.log(triangulo(2,2,2))
+console.log(triangulo(5,5,6))
