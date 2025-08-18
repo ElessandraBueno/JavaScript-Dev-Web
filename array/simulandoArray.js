@@ -5,10 +5,12 @@ const quaseArray = {
 }
 console.log(quaseArray)
 
-Object.defineProperty(quaseArray, 'toString)', {
-    vale: function () {return Object.values(this)},   
+Object.defineProperty(quaseArray, 'toString', {
+    value: function () {return Object.values(this)},   
     enumerable: false
 })
 
+console.log(quaseArray[0])
+
 const meuArray = 'Amanda, Jasmine, Joao'
-console.log(quaseArray.toString,)
+console.log(quaseArray.toString(), meuArray)
